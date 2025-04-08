@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Noticias{% endblock %}
+{% block content %}
+<h2>Últimas Noticias</h2>
+
+<article>
+  <h3>colección otoño 2024</h3>
+  <img src="{{ url_for('static', filename='img/noticia1.jpg') }}" alt="Colección verano">
+  <p>UrbanStyle muetsra su colección de otoño y no cabe ni la mas minima duda de que sera la mas vendida.</p>
+</article>
+<article>
+  <h3>Nueva colección Verano 2025</h3>
+  <img src="{{ url_for('static', filename='img/noticia2.png') }}" alt="Colección verano">
+  <p>UrbanStyle lanza su colección más fresca e innovadora hasta ahora.</p>
+</article>
+{% endblock %}

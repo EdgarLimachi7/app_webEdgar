@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Contacto{% endblock %}
+{% block content %}
+
+<h2 class="mb-4">Contáctanos</h2>
+
+<div class="row">
+  <!-- Formulario -->
+  <div class="col-md-6">
+    <form action="/contacto" method="POST" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" name="correo" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Información de contacto -->
+  <div class="col-md-6 mt-4 mt-md-0">
+    <h4>Información de contacto</h4>
+    <address class="mb-3">
+      <strong>Dirección:</strong> Av. Panamericana 321<br>
+      <strong>Teléfono:</strong> 12345678<br>
+      <strong>Email:</strong> contacto123@UrbanStyle.com
+    </address>
+    <img src="{{ url_for('static', filename='img/mapa.png') }}" alt="Mapa ubicación" class="img-fluid rounded shadow">
+  </div>
+</div>
+
+{% endblock %}

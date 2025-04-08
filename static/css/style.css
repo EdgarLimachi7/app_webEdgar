@@ -1,0 +1,164 @@
+/* ====== Estilos generales ====== */
+body {
+  background-color: #f4f8fb;
+  color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2em;
+}
+
+/* ====== Header ====== */
+header {
+  background-color: #131365;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.2em 0;
+}
+
+.logo {
+  height: 100px;
+}
+
+/* ====== Navegación ====== */
+nav a {
+  margin: 0 10px;
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Footer ====== */
+.footer {
+  background-color: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+
+.footer .redes {
+  margin: 10px 0;
+}
+
+.footer .icono-red {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+  transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.footer .icono-red:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer .autor {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ccc;
+}
+
+.footer .divider {
+  width: 60%;
+  margin: 1em auto;
+  border: 0;
+  height: 1px;
+  background: #444;
+}
+
+/* ====== Imágenes ====== */
+/* Estilo general para imágenes */
+img {
+  height: auto;
+  border-radius: 20px;
+  max-width: 40%;
+}
+
+/* Imágenes específicas dentro de servicios */
+.servicio img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+}
+
+
+/* ====== Botones ====== */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #0a0a23;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+/* ====== Sección Servicios ====== */
+.servicio {
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: #e6f0ff;
+  border-left: 4px solid #0a0a23;
+  border-radius: 10px;
+}
+
+/* ====== Formulario de contacto ====== */
+form {
+  background-color: #c3c0c0;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

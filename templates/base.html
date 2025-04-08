@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}UrbanStyle{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo" class="logo">
+    <h1>UrbanStyle</h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/quienes">Quiénes Somos</a>
+      <a href="/servicios">Servicios</a>
+      <a href="/noticias">Noticias</a>
+      <a href="/contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 <strong>UrbanStyle</strong> - Moda que inspira</p>
+      <p>Síguenos en redes:</p>
+      <div class="redes">
+        <a href="#"><img src="{{ url_for('static', filename='img/f.png') }}" alt="Facebook" class="icono-red"></a>
+        <a href="#"><img src="{{ url_for('static', filename='img/t.png') }}" alt="Twitter" class="icono-red"></a>
+        <a href="#"><img src="{{ url_for('static', filename='img/i.png') }}" alt="Instagram" class="icono-red"></a>
+      </div>
+      <hr class="divider">
+      <p class="autor">Sitio desarrollado por: <strong>Edgar Limachi Quispe</strong></p>
+    </div>
+  </footer>
+  
+</body>
+</html>

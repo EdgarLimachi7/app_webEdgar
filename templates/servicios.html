@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Servicios{% endblock %}
+{% block content %}
+<h2>Nuestros Servicios</h2>
+<div class="servicio">
+  <img src="{{ url_for('static', filename='img/servicio1.jpg') }}" alt="Diseño personalizado">
+  <p>Diseño personalizado para empresas y eventos.</p>
+  <a href="/servicio1" class="btn">Leer más</a>
+</div>
+<div class="servicio">
+  <img src="{{ url_for('static', filename='img/servicio2.jpg') }}" alt="Ventas online">
+  <p>Tienda en línea con entregas a todo el país.</p>
+  <a href="/servicio2" class="btn">Leer más</a>
+</div>
+<div class="servicio">
+  <img src="{{ url_for('static', filename='img/servicio3.jpg') }}" alt="Asesoría de imagen">
+  <p>Asesoría personalizada para renovar tu estilo.</p>
+  <a href="/servicio3" class="btn">Leer más</a>
+</div>
+{% endblock %}
